@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Biblioteka</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="Biblioteka.css">
+</head>
+<body>
+<header>
+<div class="container">
+	<h1>Main Title</h1>
+</div>
+</header>
+
+<section class="container">
+	<form class="mt-5 library-form">
+		<div class="form-group row">
+			<label for="author" class="col-sm-2 control-label" style="margin-top: 8px">Autorius:</label>
+			<div class="col">
+					<input type="text" class="form-control" id="author" placeholder="Autorius">
+			</div>
+			</label>
+		</div>
+		<div class="form-group row">
+			<label for="pavadinimas" class="col-sm-2 control-label" style="margin-top: 8px">Pavadinimas:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="title" placeholder="Pavadinimas">
+				</div>
+		</div>
+		<div class="form-group row">
+			<label for="leidykla" class="col-sm-2 control-label" style="margin-top: 8px">Leidykla:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="publisher" placeholder="Leidykla">
+				</div>
+		</div>
+		<div class="form-group row">
+			<label for="data" class="col-sm-2 control-label" style="margin-top: 8px">Data:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="date" placeholder="Data">
+				</div>
+		</div>
+		<div class="form-group row">
+			<label for="data" class="col-sm-2 control-label" style="margin-top: 8px">Aprasymas:</label>
+				<div class="col">
+					<textarea type="text" class="form-control" id="description" placeholder="Aprasymas"></textarea>
+				</div>
+		</div>
+		<button type="button" class="btn btn-primary btn-save-book">
+			Prideti 
+		</button>
+		<button type="button" class="btn btn-primary btn-clear-form">
+			Isvalyti
+		</button>
+	</form>
+	<hr>
+	<div class="book-list"></div>
+	<script src="Biblioteka.js"></script>
+</section>
+</body>
+</html>

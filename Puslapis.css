@@ -1,0 +1,13 @@
+#container {
+	margin: 15px;
+}
+
+img{
+	margin:0 auto;
+	text-align: center;
+}
+.centre{
+	padding:0 0 0 10%;
+	margin: auto;
+    width: 50%; 
+}

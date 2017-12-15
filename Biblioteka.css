@@ -1,0 +1,14 @@
+header {
+	background-image: url(biblioteka.jpg);
+}
+
+header h1 {
+	color: #fff;
+	padding: 80px 0;
+}
+
+.book {
+	word-wrap: break-word;
+}
+
+p{margin:0;}
