@@ -7,14 +7,30 @@
 	<link rel="stylesheet" href="Biblioteka.css">
 </head>
 <body>
-<header>
+<header class="main-header">
 <div class="container">
 	<h1>Main Title</h1>
 </div>
 </header>
+<button type="button" onclick="document.getElementById('screen').style.display = 'block'"> Pridekite knyga
+	</button>
 
-<section class="container">
-	<form class="mt-5 library-form">
+<div id="screen-item" onclick="document.getElementById(this.id).style.display = 'none'">
+	
+
+</div>
+
+<div id="screen">
+
+<div class ="modal-screen">
+	<header class="popup-container">
+		<span class="button-type align-top-right" onclick="document.getElementById('screen').style.display = 'none'"> &times;</span>
+		<h2>Pridekite knyga</h2>
+	</header>
+	<hr>
+
+	<div>
+		<form class="mt-5 library-form">
 		<div class="form-group row">
 			<label for="author" class="col-sm-2 control-label" style="margin-top: 8px">Autorius:</label>
 			<div class="col">
@@ -46,6 +62,9 @@
 					<textarea type="text" class="form-control" id="description" placeholder="Aprasymas"></textarea>
 				</div>
 		</div>
+	</div>
+
+	<footer class="popup-container">
 		<button type="button" class="btn btn-primary btn-save-book">
 			Prideti 
 		</button>
@@ -53,9 +72,57 @@
 			Isvalyti
 		</button>
 	</form>
+	</footer>
+</div>
+</div>
+
+<section class="container">
+	<!-- <form class="mt-5 library-form">
+		<div class="form-group row">
+			<label for="author" class="col-sm-2 control-label" style="margin-top: 8px">Autorius:</label>
+			<div class="col">
+					<input type="text" class="form-control" id="author" placeholder="Autorius">
+			</div>
+			</label>
+		</div>
+		<div class="form-group row">
+			<label for="pavadinimas" class="col-sm-2 control-label" style="margin-top: 8px">Pavadinimas:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="title" placeholder="Pavadinimas">
+				</div>
+		</div>
+		<div class="form-group row">
+			<label for="leidykla" class="col-sm-2 control-label" style="margin-top: 8px">Leidykla:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="publisher" placeholder="Leidykla">
+				</div>
+		</div>
+		<div class="form-group row">
+			<label for="data" class="col-sm-2 control-label" style="margin-top: 8px">Data:</label>
+				<div class="col">
+					<input type="text" class="form-control" id="date" placeholder="Data">
+				</div>
+		</div>
+		<div class="form-group row">
+			<label for="data" class="col-sm-2 control-label" style="margin-top: 8px">Aprasymas:</label>
+				<div class="col">
+					<textarea type="text" class="form-control" id="description" placeholder="Aprasymas"></textarea>
+				</div>
+		</div>
+		<footer class="popup-container">
+		<button type="button" class="btn btn-primary btn-save-book">
+			Prideti 
+		</button>
+		<button type="button" class="btn btn-primary btn-clear-form">
+			Isvalyti
+		</button>
+	</footer>
+	</form>	
+-->
 	<hr>
 	<div class="book-list"></div>
 	<script src="Biblioteka.js"></script>
 </section>
+
 </body>
 </html>
